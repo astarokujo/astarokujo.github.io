@@ -1,0 +1,65 @@
+/*
+Name: Ryan Bhandari
+Date: Friday, June 16, 2017.
+Student Number: 323965038
+Program: ICS4U Culminating
+*/
+.next {
+	right: 0;
+}
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+}
+.prev{
+	left:0;
+}
+.text {
+	color:#959dbc;
+	-webkit-text-stroke: 0.7px black;
+	font-weight:bold;
+	font-size: 16px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width:90%;
+	text-align: center;
+}
+
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.4;
+	} 
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	} 
+	to {
+		opacity: 1;
+	}
+}
+@media only screen and (max-width: 500px) 
+{
+	.prev, .next,.text {
+		font-size: 11px;
+	}
+}
